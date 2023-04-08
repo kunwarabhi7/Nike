@@ -1,5 +1,6 @@
 import { SiNike } from "react-icons/si";
 import NewDropdown from "./NewDropdown";
+import RightHeader from "./RightHeader";
 
 
 type Props = {};
@@ -18,7 +19,9 @@ const Header = (props: Props) => {
       <p>Sale</p>
       <p>SNKRS</p>
       </div>
-      <div>Search</div>
+      <div>
+        <RightHeader />
+      </div>
     </div>
   );
 };
