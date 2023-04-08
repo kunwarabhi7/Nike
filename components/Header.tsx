@@ -11,13 +11,13 @@ const Header = (props: Props) => {
       <div>
         <SiNike className="cursor-pointer hover:opacity-50" size={30} />
       </div>
-      <div className="hidden md:flex space-x-1 items-center justify-center font-semiboldbold text-sm font-popins ">
+      <div className="hidden md:flex space-x-1 items-center justify-center font-semiboldbold text-xs font-popins ">
         <p className="hover:underline"><NewDropdown /></p>
-      <p>Men</p>
-      <p>Women</p>
-      <p>Kids</p>
-      <p>Sale</p>
-      <p>SNKRS</p>
+      <p className="cursor-pointer">Men</p>
+      <p className="cursor-pointer">Women</p>
+      <p className="cursor-pointer">Kids</p>
+      <p className="cursor-pointer">Sale</p>
+      <p className="cursor-pointer">SNKRS</p>
       </div>
       <div>
         <RightHeader />
