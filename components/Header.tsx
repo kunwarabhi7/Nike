@@ -7,7 +7,7 @@ type Props = {};
 
 const Header = (props: Props) => {
   return (
-    <div className="mx-4 flex items-center justify-between">
+    <div className="mx-4 h-16 flex items-center justify-between z-20 sticky top-0 left-0 right-0">
       <div>
         <SiNike className="cursor-pointer hover:opacity-50" size={30} />
       </div>
@@ -19,7 +19,7 @@ const Header = (props: Props) => {
       <p className="cursor-pointer">Sale</p>
       <p className="cursor-pointer">SNKRS</p>
       </div>
-      <div>
+      <div className="z-50">
         <RightHeader />
       </div>
     </div>

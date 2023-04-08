@@ -8,7 +8,7 @@ type Props = {}
 
 const Footer = (props: Props) => {
   return (
-    <div className='bg-black px-2 fixed bottom-0 left-0 right-0 text-white'>
+    <div className='bg-black px-2     text-white '>
       <div className='md:flex items-center justify-between p-1'>
       <div className='uppercase text-[10px] font-semibold'>
         <p>Find a STORE</p>

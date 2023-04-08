@@ -28,7 +28,7 @@ const RightHeader = (props: Props) => {
         {isOpen ? '' : <AiOutlineMenu onClick={toggleMenu}  />}
 
       {isOpen && (
-        <div className="bg-white w-40 border rounded h-screen absolute top-0 -right-5 ">
+        <div className="bg-white w-40 border rounded h-screen absolute top-0 -right-5 z-50">
           <ul className='flex flex-col space-y-1 text-sm font-semibold'>
             <AiOutlineClose onClick={toggleMenu} size={15}/>
             <li>New & Featured</li>
