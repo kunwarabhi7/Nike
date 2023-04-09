@@ -22,7 +22,7 @@ const Header = (props: Props) => {
       <p className="cursor-pointer hover:underline">Men</p>
       <p className="cursor-pointer hover:underline">Women</p>
       <p className="cursor-pointer hover:underline">Kids</p>
-      <p className="cursor-pointer hover:underline relative"><SubMenu /></p>
+      <div className="cursor-pointer hover:underline relative"><SubMenu /></div>
       <p className="cursor-pointer hover:underline">SNKRS</p>
       </div>
       <div className="z-50">
