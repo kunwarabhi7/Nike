@@ -43,17 +43,17 @@ const HeroBanner = (props: Props) => {
     
       <div>
         <Image alt="image1" className="object-cover" src={Image1} />
-        <p className="absolute top-24 md:top-80 left-4">Buy Now</p>
+        <p className="absolute top-24 md:top-80 left-2 bg-white p-1 text-sm md:text-lg" >Buy Now</p>
         
       </div>
       <div>
         <Image alt="image2" src={Image2} />
-        <p className="absolute top-24 md:top-80 left-4">Buy Now</p>
+        <p className="absolute top-24 md:top-80 left-2 bg-white p-1 text-sm md:text-lg">Buy Now</p>
         
       </div>
       <div>
         <Image alt="image3" src={Image3} />
-        <p className="absolute top-24 md:top-40 left-4">Buy Now</p>
+        <p className="absolute top-24 md:top-80 left-2 bg-white p-1 text-sm md:text-lg">Buy Now</p>
         
       </div>
     </Carousel>
