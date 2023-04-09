@@ -14,14 +14,14 @@ const NewDropdown = (props: Props) => {
         >
           <span className="">New & Featured</span>
         </button>
-        <ul
+        <div
           className={`absolute right-0 w-full bg-gray-100 h-64 py-2 mt-2 rounded-lg shadow-xl ${
             open ? "block" : "hidden"
           }`}
         >
-          <div className="flex text-sm font-semibold">
+          <p className="flex text-sm font-semibold">
             <li className="flex flex-col  w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
-              <div>New & Featured</div>
+              <h1>New & Featured</h1>
               <p className="text-xs font-thin text-gray-500">New Arrivals</p>
               <p className="text-xs font-thin text-gray-500">Latest Shoes</p>
               <p className="text-xs font-thin text-gray-500">Latest Clothing</p>
@@ -33,7 +33,7 @@ const NewDropdown = (props: Props) => {
               <p className="text-xs font-thin text-gray-500">Member Exclusive</p>
             </li>
             <li className="flex flex-col w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
-              <div>Shop Icons</div>
+              <h1>Shop Icons</h1>
               <p className="text-xs font-thin text-gray-500">Air Force 1</p>
               <p className="text-xs font-thin text-gray-500">Air Jordan 1</p>
               <p className="text-xs font-thin text-gray-500">Air Max</p>
@@ -42,28 +42,28 @@ const NewDropdown = (props: Props) => {
               <p className="text-xs font-thin text-gray-500">Pegaus</p>
             </li>
             <li className="flex flex-col w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
-              <div>New For Men</div>
+              <h1>New For Men</h1>
               <p className="text-xs font-thin text-gray-500">Shoes</p>
               <p className="text-xs font-thin text-gray-500">Clothing</p>
               <p className="text-xs font-thin text-gray-500">Accessories</p>
               <p className="text-xs font-thin text-gray-500">Shop All New</p>
             </li>
             <li className="flex flex-col w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
-              <div>New For Women</div>
+              <h1>New For Women</h1>
               <p className="text-xs font-thin text-gray-500">Shoes</p>
               <p className="text-xs font-thin text-gray-500">Clothing</p>
               <p className="text-xs font-thin text-gray-500">Accessories</p>
               <p className="text-xs font-thin text-gray-500">Shop All New</p>
             </li>
             <li className="flex flex-col w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
-              <div>New For Kids</div>
+              <h1>New For Kids</h1>
               <p className="text-xs font-thin text-gray-500">Shoes</p>
               <p className="text-xs font-thin text-gray-500">Clothing</p>
               <p className="text-xs font-thin text-gray-500">Accessories</p>
               <p className="text-xs font-thin text-gray-500">Shop All New</p>
             </li>
-          </div>
-        </ul>
+          </p>
+        </div>
       </div>
     </div>
   );
