@@ -3,6 +3,7 @@ import NewDropdown from "./NewDropdown";
 import RightHeader from "./RightHeader";
 import Link from "next/link";
 import SubMenu from "./SubMenu";
+import { useEffect, useState } from "react";
 
 
 type Props = {};
@@ -10,8 +11,23 @@ type Props = {};
 
 
 const Header = (props: Props) => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      setIsScrolled(currentScrollPos > 0);
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [prevScrollPos]);
+
   return (
-    <div className="mx-4 h-16 flex items-center justify-between z-20 sticky top-0 left-0 right-0">
+    <div className={`flex items-center justify-between px-4 py-3 bg-white fixed w-full z-50 transition-all duration-500 ease-in-out ${isScrolled ? '-top-16 shadow-md' : 'top-0'}`}>
       <Link href='/'>
       <div>
         <SiNike className="cursor-pointer hover:opacity-50" size={30} />
