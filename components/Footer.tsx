@@ -15,7 +15,7 @@ const Footer = (props: Props) => {
         <p>Become a MEMBER</p>
         <p>sign up for email</p>
         <p>Send Us Feedback</p>
-        <p>STUDENT DISCOUNTS</p>
+        <p>STUDENT DISCOUNT</p>
       </div>
       <div  className='flex items-center justify-between p-2 text-[10px] my-1'>
         <p>GET HELP</p>
