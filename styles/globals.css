@@ -108,3 +108,33 @@
 .markdown ul li {
     margin: 10px 0;
 }
+
+/* Custom */
+
+  .my-carousel .carousel {
+    background-color: #f3f3f3;
+    border: 1px solid #ddd;
+  }
+
+  .my-carousel .thumbs-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 20px;
+    width: 80px;
+    height: 100%;
+  }
+
+  .my-carousel .thumb {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    border: 2px solid #fff;
+    cursor: pointer;
+  }
+
+  .my-carousel .thumb.selected,
+  .my-carousel .thumb:hover {
+    border-color: #333;
+  }

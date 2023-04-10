@@ -34,7 +34,7 @@ const Header = (props: Props) => {
       </div>
       </Link>
       <div className="hidden md:flex gap-3 items-center justify-center font-semiboldbold text-xs font-popins ">
-        <p className="hover:underline"><NewDropdown /></p>
+        <div className="hover:underline"><NewDropdown /></div>
       <p className="cursor-pointer hover:underline">Men</p>
       <p className="cursor-pointer hover:underline">Women</p>
       <p className="cursor-pointer hover:underline">Kids</p>
