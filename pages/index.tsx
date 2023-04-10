@@ -1,13 +1,15 @@
 import FirstComponent from '@/components/FirstComponent';
 import HeroBanner from '@/components/HeroBanner';
+import Products from '@/components/Products';
 
 type Props = {};
 
 const Home = (props: Props) => {
   return (
-    <div className='mx-4xl max-w-7xl'>
+    <div className=''>
 <HeroBanner />
 <FirstComponent />
+<Products />
 </div>
   );
 };

@@ -7,7 +7,7 @@ import Header from "@/components/Header";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <div className="bg-white">
       <Head>
         <title>Nike Store</title>
         <meta name="description" content="Create by Abhishek" />
@@ -24,6 +24,6 @@ export default function App({ Component, pageProps }: AppProps) {
       <Header  />
       <Component {...pageProps} />
       <Footer />
-    </>
+    </div>
   );
 }
