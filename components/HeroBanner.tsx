@@ -21,7 +21,7 @@ const HeroBanner = (props: Props) => {
       renderArrowPrev={(clickHandler, hasPrev) => {
         return (
           <div
-            className='absolute bottom-8 cursor-pointer right-6 z-10 '
+            className='absolute bottom-1 md:bottom-8 cursor-pointer right-6 z-10 '
             onClick={clickHandler}
           >
             <AiFillCaretLeft size={30}/>
@@ -31,7 +31,7 @@ const HeroBanner = (props: Props) => {
       renderArrowNext={(clickHandler, hasNext) => {
         return (
           <div
-            className='absolute bottom-8 cursor-pointer right-1 z-10'
+            className='absolute bottom-1 md:bottom-8 cursor-pointer right-1 z-10'
             onClick={clickHandler}
           >
             <AiFillCaretRight  size={30}/>
@@ -43,17 +43,17 @@ const HeroBanner = (props: Props) => {
     
       <div>
         <Image alt="image1" className="object-cover" src={Image1} />
-        <p className="absolute top-24 md:top-80 left-2 bg-white p-1 text-sm md:text-lg font-bold" >Buy Now</p>
+        <p className="absolute top-24 md:top-80 left-0 md:left-2 bg-white p-1 text-sm md:text-lg font-bold" >Buy Now</p>
         
       </div>
       <div>
         <Image alt="image2" src={Image2} />
-        <p className="absolute top-24 md:top-80 left-2 bg-white p-1 text-sm md:text-lg font-bold">Buy Now</p>
+        <p className="absolute top-24 md:top-80 left-0 md:left-2 bg-white p-1 text-sm md:text-lg font-bold">Buy Now</p>
         
       </div>
       <div>
         <Image alt="image3" src={Image3} />
-        <p className="absolute top-24 md:top-80 left-2 bg-white p-1 text-sm md:text-lg font-bold">Buy Now</p>
+        <p className="absolute top-24 md:top-80 left-0 md:left-2 bg-white p-1 text-sm md:text-lg font-bold">Buy Now</p>
         
       </div>
     </Carousel>
