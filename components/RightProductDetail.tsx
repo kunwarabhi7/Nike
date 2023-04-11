@@ -1,4 +1,5 @@
 import React from "react";
+import {AiOutlineHeart} from 'react-icons/ai'
 
 type Props = {};
 
@@ -49,8 +50,10 @@ const RightProductDetail = (props: Props) => {
         </div>
         <div className="flex flex-col space-y-3">
 
-        <button className="bg-black text-white rounded-xl py-2 font-bold hover:opacity-50">Add to Bag</button>
-        <button className="border bg-white text-black rounded-xl py-2 font-bold hover:border-black">Favorite</button>
+        <button className="bg-black text-white rounded-full py-2 font-bold hover:opacity-50">Add to Bag</button>
+
+
+        <button className="border bg-white flex item-center justify-center text-black rounded-full py-2 font-bold hover:border-black">Favorite <span  className='mt-[2px] text-gray-500 ml-1'><AiOutlineHeart size={20} /></span> </button>
         </div>
       </div>
     </div>
