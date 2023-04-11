@@ -1,5 +1,6 @@
 import ProductDetailsCrousel from "@/components/ProductDetailsCrousel";
 import RightProductDetail from "@/components/RightProductDetail";
+import YouMayAlsoLike from "@/components/YouMayAlsoLike";
 type Props = {};
 
 const ImageZoom = (props: Props) => {
@@ -17,6 +18,7 @@ const ImageZoom = (props: Props) => {
    </div>
 </div>
       </div>
+      <YouMayAlsoLike />
     </div>
   );
 };

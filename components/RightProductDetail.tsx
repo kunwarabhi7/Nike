@@ -44,7 +44,7 @@ const RightProductDetail = (props: Props) => {
           <div className="border cursor-pointer  rounded-md text-center  hover:border-black py-3 font-medium">
             UK 6{" "}
           </div>
-          <div className="border cursor-pointer  rounded-md text-center  hover:border-black py-3 font-medium">
+          <div className="border cursor-pointer bg-black/[0.1] cursor-not-allowed opacity-50  rounded-md text-center  hover:border-black py-3 font-medium">
             UK 6{" "}
           </div>
         </div>
@@ -56,7 +56,7 @@ const RightProductDetail = (props: Props) => {
         <button className="border bg-white flex item-center justify-center text-black rounded-full py-2 font-bold hover:border-black">Favorite <span  className='mt-[2px] text-gray-500 ml-1'><AiOutlineHeart size={20} /></span> </button>
         </div>
       </div>
-    </div>
+        </div>
   );
 };
 
