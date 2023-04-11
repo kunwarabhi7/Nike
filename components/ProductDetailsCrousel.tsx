@@ -41,7 +41,7 @@ const ProductDetailsCrousel = (props: Props) => {
       <div className=" z-40 text-[20px] w-full max-w-[1360px] mx-auto sticky top-[50px]">
         <Carousel
           className="productCarousel"
-          thumbWidth={60}
+          thumbWidth={70}
           infiniteLoop={true}
           showIndicators={false}
           showStatus={false}
@@ -50,7 +50,7 @@ const ProductDetailsCrousel = (props: Props) => {
         >
           {images.map((image, index) =>(
            
-                <img key={index} alt="image"  src={image.url} />
+                <img key={index}  alt="image"  src={image.url} />
            ))}
         </Carousel>
       </div>
