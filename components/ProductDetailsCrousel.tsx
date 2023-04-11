@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React, { useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
@@ -38,19 +37,18 @@ const ProductDetailsCrousel = (props: Props) => {
   const [activeSlide, setActiveSlide] = useState(0);
   return (
     <div>
-      <div className=" z-40 text-[20px] w-full max-w-[1360px] mx-auto sticky top-[50px]">
+             <div className="text-white text-[20px] w-full max-w-[1360px] mx-auto sticky top-[50px]">
+
         <Carousel
-          className="productCarousel"
-          thumbWidth={70}
-          infiniteLoop={true}
-          showIndicators={false}
-          showStatus={false}
-          
-          autoFocus
+         infiniteLoop={true}
+         showIndicators={false}
+         showStatus={false}
+         thumbWidth={60}
+         className="productCarousel"
         >
           {images.map((image, index) =>(
            
-                <img key={index}  alt="image"  src={image.url} />
+                <img key={index} className="h-[540px]"   alt="image"  src={image.url} />
            ))}
         </Carousel>
       </div>
