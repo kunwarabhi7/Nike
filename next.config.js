@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   images:{
     domains:['static.nike.com',
-  'www.nike.com']
+  'www.nike.com','secure-images.nike.com']
   }
 }
 

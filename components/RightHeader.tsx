@@ -3,6 +3,7 @@ import { BsSearch } from "react-icons/bs";
 import { BiShoppingBag } from "react-icons/bi";
 import { SiJordan } from "react-icons/si";
 import { AiOutlineHeart, AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import Link from "next/link";
 type Props = {};
 
 const RightHeader = (props: Props) => {
@@ -36,6 +37,7 @@ const RightHeader = (props: Props) => {
           </span>
         )}
       </div>
+      <Link href='/cart'>
       <div className="relative">
         <BiShoppingBag />
         {itemsInCart > 0 && (
@@ -44,6 +46,7 @@ const RightHeader = (props: Props) => {
           </span>
         )}
       </div>
+        </Link>
       <div className="md:hidden ">
         {isOpen ? "" : <AiOutlineMenu onClick={toggleMenu} />}
 
