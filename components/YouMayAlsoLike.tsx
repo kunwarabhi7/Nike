@@ -29,7 +29,7 @@ const YouMayAlsoLike = (props: Props) => {
       };
   return (
     <div className=' mx-8 w-full'>
-        <p className='font-bold'>You May Also Like</p>
+        <p className='font-bold text-xl my-2'>You May Also Like</p>
 <Carousel  infinite={true} 
  responsive={responsive}>
     <div className='mr-2'>

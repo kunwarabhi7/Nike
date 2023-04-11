@@ -18,19 +18,19 @@ const RightHeader = (props: Props) => {
 
   return (
     <div className="flex relative items-center justify-center space-x-2">
-      <div className="md:flex hidden items-center justify-center bg-gray-200 rounded-full w-24 h-5">
-        <BsSearch size={20} className="px-1" />
+      <div className="md:flex hidden items-center justify-center bg-gray-100 rounded-full w-48 h-8">
+        <BsSearch size={30} className="px-1" />
         <input
           type="text"
-          className=" bg-transparent rounded-full w-16 text-sm pl-2 py-1 focus:outline-none "
+          className=" bg-transparent rounded-full w-36 text-sm pl-2 py-2 focus:outline-none "
           placeholder="search"
         />
       </div>
       <div>
-        <BsSearch size={15} className="md:hidden" />
+        <BsSearch size={25} className="md:hidden" />
       </div>
       <div className="relative hidden md:flex">
-        <AiOutlineHeart  />
+        <AiOutlineHeart size={30} />
         {likedItem > 0 && (
           <span className="absolute top-2 right-0 inline-flex items-center justify-center px-1  -mt-2 text-xs font-bold leading-none text-red-100 transform translate-x-1/2 -translate-y-1/2 bg-red-600 rounded-full">
             {likedItem}
@@ -39,7 +39,7 @@ const RightHeader = (props: Props) => {
       </div>
       <Link href='/cart'>
       <div className="relative">
-        <BiShoppingBag />
+        <BiShoppingBag size={30}/>
         {itemsInCart > 0 && (
           <span className="absolute top-2 right-0 inline-flex items-center justify-center px-1  -mt-2 text-xs font-bold leading-none text-red-100 transform translate-x-1/2 -translate-y-1/2 bg-red-600 rounded-full">
             {itemsInCart}
@@ -48,7 +48,7 @@ const RightHeader = (props: Props) => {
       </div>
         </Link>
       <div className="md:hidden ">
-        {isOpen ? "" : <AiOutlineMenu onClick={toggleMenu} />}
+        {isOpen ? "" : <AiOutlineMenu size={25} onClick={toggleMenu} />}
 
         {isOpen && (
           <div className="bg-white w-40 border rounded h-screen absolute -top-2 -right-5 z-50">
