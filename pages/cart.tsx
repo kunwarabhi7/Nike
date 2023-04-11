@@ -31,9 +31,9 @@ const Cart = (props: Props) => {
               <p>Air Jordan Legacy 312 Low</p>
               <p>MRP: ₹ 12 995.00</p>
             </div>
-            <p>Men's Shoes</p>
-            <p>Summit White/Tech Grey/Black/Fire Red</p>
-            <div className="flex">
+            <p className="text-gray-400">Men's Shoes</p>
+            <p className="text-gray-400">Summit White/Tech Grey/Black/Fire Red</p>
+            <div className="flex space-x-4 my-2 text-gray-400">
               <p>Size 8</p>
               <p>Quantity 1</p>
             </div>
@@ -60,9 +60,9 @@ const Cart = (props: Props) => {
           <p>₹ 13 745.00</p>
         </div>
         <div className="border-t border-gray-300 "/>
-        <div className="flex flex-col space-y-2 mt-5">
-          <button className="bg-black rounded-full py-1 text-white">Guest CheckOut</button>
-          <button className="bg-black text-white py-1 rounded-full">Member Checkout</button>
+        <div className="flex flex-col space-y-2 mt-5 mx-2">
+          <button className="bg-black rounded-full py-1 hover:opacity-50 text-white">Guest CheckOut</button>
+          <button className="bg-black text-white py-1 hover:opacity-50 rounded-full">Member Checkout</button>
         </div>
       </div>
     </div>
