@@ -10,6 +10,8 @@ type Props = {};
 
 const HeroBanner = (props: Props) => {
   return (
+    <div className="w-full max-w-7xl mx-auto ">
+
     <Carousel
       className="mt-12 relative"
       autoPlay={true}
@@ -38,7 +40,7 @@ const HeroBanner = (props: Props) => {
           </div>
         );
       }}
-    >
+      >
     
     
       <div>
@@ -57,6 +59,7 @@ const HeroBanner = (props: Props) => {
         
       </div>
     </Carousel>
+      </div>
   );
 };
 

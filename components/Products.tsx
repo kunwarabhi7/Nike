@@ -63,7 +63,7 @@ type Props = {};
 
 const Products = (props: Props) => {
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 gap-1  max-w-7xl md:mx-8 sm:gap-2 md:gap-3 ">
+    <div className="grid grid-cols-2 sm:grid-cols-3 gap-1  max-w-7xl ml-16 md:ml-48 mt-16 sm:gap-2 md:gap-4 ">
      {shoes?.map(({id,MRP,colors,category,name,image,Seller})=>(
         <Product key={id} name={name} Seller={Seller} category={category} colors={colors}  MRP={MRP} image={image}  />
      ))}
