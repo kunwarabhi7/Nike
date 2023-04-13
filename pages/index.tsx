@@ -1,23 +1,13 @@
 import FirstComponent from '@/components/FirstComponent';
 import HeroBanner from '@/components/HeroBanner';
 import Products from '@/components/Products';
-import { useEffect, useState } from 'react';
+
 import {fetchDataFromApi} from '../utils/api'
-type Props = {};
+type Props = {products :  {} | null};
 
-const Home = (props: Props) => {
-const [data , setData] =   useState(null)
+const Home = ({products}: Props) => {
 
-
-const fetchProduct =async () => {
-  const {data} =  await fetchDataFromApi("/api/products")
-  setData(data)
-}
-useEffect(()=>{
-  fetchProduct()
-},[])
-console.log(data)
-
+console.log(products)
 
   return (
     <div className=''>
@@ -29,3 +19,15 @@ console.log(data)
 };
 
 export default Home;
+
+
+export async function getStaticProps(){
+  const products =  await fetchDataFromApi("/api/products")
+  
+
+  return {
+    props : {
+ products
+    }
+  }
+}
