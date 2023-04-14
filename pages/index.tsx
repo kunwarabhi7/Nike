@@ -3,7 +3,7 @@ import HeroBanner from '@/components/HeroBanner';
 import Products from '@/components/Products';
 
 import {fetchDataFromApi} from '../utils/api'
-type Props = {products :  {} | null};
+type Props = {products :  {} };
 
 const Home = ({products}: Props) => {
 
@@ -13,7 +13,10 @@ console.log(products)
     <div className=''>
 <HeroBanner />
 <FirstComponent />
+
 <Products />
+
+
 </div>
   );
 };
