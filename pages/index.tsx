@@ -26,7 +26,7 @@ console.log(products.products)
   return (
     <div className="">
       <HeroBanner />
-      <div className="grid grid-cols-2 md:grid-cols-3 my-8 mb-36">
+      <div className="grid grid-cols-2 w-full max-w-7xl mx-auto md:grid-cols-3  my-8 mb-36">
 
 {products?.products?.data?.map((da: {
     id: Key | null | undefined; attributes: {

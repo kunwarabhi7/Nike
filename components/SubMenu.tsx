@@ -16,7 +16,7 @@ const[submenu , setSubmenu] =    useState(false)
         <button onMouseEnter={()=>setSubmenu(true)}>
           Sale
         </button>
-        <ul  className={`absolute right-0 w-40 px-2 bg-gray-100 h-20 py-2  rounded  shadow-xl ${submenu? 'block':'hidden'}`}>
+        <ul  className={`absolute right-0 w-40 px-2 bg-gray-100 h-48 py-2  rounded  shadow-xl ${submenu? 'block':'hidden'}`}>
 {subMenuData.map(({id,name,doc_count})=>(
   <li key={id}>{name}<span>{doc_count}</span></li>
 ))}
