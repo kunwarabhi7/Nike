@@ -36,7 +36,7 @@ const Cart = (props: Props) => {
         <div className="border-t border-gray-300  "/>
         <div className="flex justify-between my-3">
           <p>Total</p>
-          <p>₹ 13 745.00</p>
+          <p>₹ 13 745.000</p>
         </div>
         <div className="border-t border-gray-300 "/>
         <div className="flex flex-col space-y-2 mt-5 mx-2">
