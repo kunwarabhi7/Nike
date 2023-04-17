@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import {fetchDataFromApi} from '../utils/api'
 
 type Props = {}
 const subMenuData = [
@@ -10,6 +11,17 @@ const subMenuData = [
 
 const SubMenu = (props: Props) => {
 const[submenu , setSubmenu] =    useState(false)
+const [categories, SetCategories] = useState(null)
+useEffect(()=>{
+fetchCategories()
+},[])
+
+const fetchCategories = async () => {
+const {data} =  await fetchDataFromApi('/api/categories?populate=*')
+SetCategories(data)
+}
+console.log(categories)
+
   return (
     <div className='flex justify-center'>
       <div  onMouseLeave={()=>setSubmenu(false)}>
