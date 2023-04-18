@@ -1,9 +1,14 @@
 import ProductDetailsCrousel from "@/components/ProductDetailsCrousel";
 import RightProductDetail from "@/components/RightProductDetail";
 import YouMayAlsoLike from "@/components/YouMayAlsoLike";
-type Props = {};
+import { fetchDataFromApi } from "@/utils/api";
 
-const ImageZoom = (props: Props) => {
+type Props = {
+  paths: {}
+};
+
+const ImageZoom = ({paths}: Props) => {
+  console.log(paths)
   return (
     <div className="w-full md:py-24">
       <div className="w-full max-w-[1280px] px-5 md:px-10 mx-auto">
@@ -24,3 +29,26 @@ const ImageZoom = (props: Props) => {
 };
 
 export default ImageZoom;
+
+
+
+export async function getStaticPaths() {
+  const category = await fetchDataFromApi('/api/categories?populate=*')
+  const paths = category.data.map((c: { attributes: { slug: any; }; })=>({
+    params: {
+      slug: c.attributes.slug
+    }
+  }))
+  return {
+    paths,
+    fallback:false
+  }
+}
+
+// `getStaticPaths` requires using `getStaticProps`
+// export async function getStaticProps() {
+//   return {
+//     // Passed to the page component as props
+//     props: { post: {} },
+//   }
+// }

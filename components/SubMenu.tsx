@@ -12,7 +12,7 @@ const subMenuData = [
 
 const SubMenu = (props: Props) => {
   const [submenu, setSubmenu] = useState(false);
-  const [categories, SetCategories] = useState(null);
+  const [categories, SetCategories] = useState<any[]>([]);
 
   const fetchCategories = async () => {
     const { data } = await fetchDataFromApi("/api/categories?populate=*");
