@@ -22,7 +22,7 @@ type Props = {
 };
 
 const Product = ({ data }: Props) => {
-  // console.log(data)
+  console.log(data)
   return (
     <Link href={data.slug}>
       <div className="md:w-[396px] md:h-[590px]h-[280px] w-[280px]  md:mx-4 my-4 ">
