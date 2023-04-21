@@ -14,7 +14,7 @@ const Cart = (props: Props) => {
       flex flex-col md:flex-row  item-center justify-around"
     >
       <div className="text-xl ">
-        <p className="text-center md:text-left md:ml-5 font-bold"> Bag</p>
+        <p className="text-center md:text-left md:ml-5 font-bold"> Baag</p>
         <div className="space-y-4 mx-3">
 
        <CartItem />

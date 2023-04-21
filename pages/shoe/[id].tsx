@@ -45,10 +45,6 @@ export async function getStaticPaths() {
   }
 }
 
-// `getStaticPaths` requires using `getStaticProps`
-// export async function getStaticProps() {
-//   return {
-//     // Passed to the page component as props
-//     props: { post: {} },
-//   }
-// }
+
+export async function getStaticProps() {}
+ 
