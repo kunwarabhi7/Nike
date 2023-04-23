@@ -40,7 +40,7 @@ const Cart = (props: Props) => {
         </div>
         <div className="border-t border-gray-300 "/>
         <div className="flex flex-col space-y-2 mt-5 mx-2">
-          <button className="bg-black rounded-full py-1 hover:opacity-50 text-white">Guest CheckOut</button>
+          <button className="bg-black rounded-full py-1 hover:opacity-50 text-white">Guest CheckOuttt</button>
           <button className="bg-black text-white py-1 hover:opacity-50 rounded-full">Member Checkout</button>
         </div>
       </div>
