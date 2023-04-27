@@ -22,7 +22,7 @@ const YouMayAlsoLike = (props: Props) => {
           items: 2
         },
         mobile: {
-          breakpoint: { max: 464, min: 0 },
+          breakpoint: { max: 464, min: 40 },
           items: 1
         }
       };
