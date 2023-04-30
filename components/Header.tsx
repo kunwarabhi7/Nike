@@ -38,10 +38,8 @@ const Header = (props: Props) => {
         <div className="hover:underline">
           <NewDropdown />
         </div>
-        <Link href='/shoe/1'>
-
-
-        <p className="cursor-pointer hover:underline">Men</p>
+        <Link href="/shoe/1">
+          <p className="cursor-pointer hover:underline">Men</p>
         </Link>
         <p className="cursor-pointer hover:underline">Women</p>
         <p className="cursor-pointer hover:underline">Kids</p>
